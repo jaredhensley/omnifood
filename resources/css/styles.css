@@ -145,7 +145,8 @@ a:active {
 /* --- BUTTONS --- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -155,7 +156,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     color: #fff;
     border: 1px solid #e67e22;
@@ -169,13 +171,14 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #cf6d17;
 }
 
 .btn-full:hover,
 .btn-full:active {
-    
     border: 1px solid #cf6d17;
 }
 
@@ -459,5 +462,121 @@ cite img {
 .plan-box div:last-child {
     text-align: center;
     border-bottom: transparent;
+}
+
+/* -------------------------------------- */
+/* CONTACT FORM */
+/* -------------------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* -------------------------------------- */
+/* CONTACT FORM */
+/* -------------------------------------- */
+
+footer {
+    padding: 40px;
+    background-color: #333;
+    color: #e6e6e6;
+    font-size: 80%;
+}
+.footer-nav {
+    text-decoration: none;
+    list-style: none;
+    float: left
+}
+
+.social-icons {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-icons li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-icons li a:link,
+.social-icons li a:visited {
+    text-decoration: none;
+    border-bottom: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active, 
+.social-icons li a:hover,
+.social-icons li a:active {
+    text-decoration: none;
+    border-bottom: 0;
+    color: #ddd;
+}
+
+.social-icons li a:visited,
+.social-icons li a:link {
+    font-size: 150%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+footer p {
+    margin-top: 20px;
+    color: #888;
+    text-align: center;
 }
 
