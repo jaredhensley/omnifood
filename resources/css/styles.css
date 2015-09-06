@@ -222,6 +222,15 @@ header {
     margin-top: 20px;
 }
 
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* MAIN NAV */
 .main-nav {
     float: right;
     list-style: none;
@@ -250,6 +259,28 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+/* Sticky Nav */
+
+.sticky {
+  position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.sticky .main-nav {margin-top: 18px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 16px 0;
+}
+
+.sticky .logo {display: none;}
+.sticky .logo-black {display: block;}
+
 /* -------------------------------------- */
 /* MEALS */
 /* -------------------------------------- */
@@ -257,10 +288,6 @@ header {
 .section-features .long-copy {
     margin-bottom: 30px;
 }
-
-/* -------------------------------------- */
-/* MEALS */
-/* -------------------------------------- */
 
 .section-meals {
     padding: 0;
